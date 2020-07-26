@@ -1,0 +1,16 @@
+server:
+  port: 8081
+#  servlet:
+#    context-path: /eurekaService
+
+spring:
+  application:
+    name: eureka-service
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+#  instance:
+#    status-page-url: ${server.servlet.context-path}/info
+#    health-check-url-path: ${server.servlet.context-path}/health
